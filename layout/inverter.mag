@@ -1,0 +1,88 @@
+magic
+tech sky130A
+timestamp 1755011021
+<< nwell >>
+rect -90 -40 100 155
+<< nmos >>
+rect 0 -140 15 -90
+<< pmos >>
+rect 0 -15 15 75
+<< ndiff >>
+rect -50 -95 0 -90
+rect -50 -135 -40 -95
+rect -20 -135 0 -95
+rect -50 -140 0 -135
+rect 15 -95 70 -90
+rect 15 -135 40 -95
+rect 60 -135 70 -95
+rect 15 -140 70 -135
+<< pdiff >>
+rect -65 65 0 75
+rect -65 -5 -55 65
+rect -30 -5 0 65
+rect -65 -15 0 -5
+rect 15 65 75 75
+rect 15 -5 40 65
+rect 65 -5 75 65
+rect 15 -15 75 -5
+<< ndiffc >>
+rect -40 -135 -20 -95
+rect 40 -135 60 -95
+<< pdiffc >>
+rect -55 -5 -30 65
+rect 40 -5 65 65
+<< poly >>
+rect 0 75 15 90
+rect 0 -50 15 -15
+rect -25 -75 15 -50
+rect 0 -90 15 -75
+rect 0 -155 15 -140
+<< locali >>
+rect -65 65 -20 75
+rect -65 -5 -55 65
+rect -30 -5 -20 65
+rect -65 -15 -20 -5
+rect 30 65 75 75
+rect 30 -5 40 65
+rect 65 -5 75 65
+rect 30 -15 75 -5
+rect -50 -95 -10 -90
+rect -50 -135 -40 -95
+rect -20 -135 -10 -95
+rect -50 -140 -10 -135
+rect 30 -95 70 -90
+rect 30 -135 40 -95
+rect 60 -135 70 -95
+rect 30 -140 70 -135
+<< viali >>
+rect -70 105 -45 130
+rect -25 105 0 130
+rect 20 105 45 130
+rect -75 -215 -45 -185
+rect -25 -215 5 -185
+rect 25 -215 55 -185
+<< metal1 >>
+rect -80 130 90 140
+rect -80 105 -70 130
+rect -45 105 -25 130
+rect 0 105 20 130
+rect 45 105 90 130
+rect -80 95 90 105
+rect -65 -15 -20 95
+rect -90 -75 0 -50
+rect 30 -55 75 75
+rect 30 -75 100 -55
+rect -50 -180 -10 -90
+rect 30 -140 70 -75
+rect -85 -185 90 -180
+rect -85 -215 -75 -185
+rect -45 -215 -25 -185
+rect 5 -215 25 -185
+rect 55 -215 90 -185
+rect -85 -220 90 -215
+<< labels >>
+rlabel metal1 75 -200 75 -200 1 GND!
+rlabel metal1 -90 -75 -90 -50 3 in
+rlabel space 100 -75 100 -50 7 out
+rlabel metal1 75 120 75 120 1 VDD!
+<< end >>
