@@ -1,0 +1,27 @@
+* Include technology device models for sky130A
+.lib "/path/to/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+
+* Optional: Include subcircuit for the inverter if you have it, or just instantiate transistors
+* .include magic_inv_post.sp
+
+* Transistor Instances with meaningful parameters:
+* Define your PMOS transistor
+X0 a_15_n15# a_n25_n75# a_n65_n15# w_n90_n40# sky130_fd_pr__pfet_01v8 ad=some_value pd=some_value as=some_value ps=some_value w=width l=length
+
+* Define your NMOS transistor
+X1 a_15_n140# a_n25_n75# a_n50_n140# SUB sky130_fd_pr__nfet_01v8 ad=some_value pd=some_value as=some_value ps=some_value w=width l=length
+
+* Power supply and ground definitions
+VDD VDD! 0 DC 1.8
+GND GND! 0 DC 0
+
+* Input stimulus (example pulse)
+Vin in 0 pulse(0 1.8 0 1n 1n 10n 20n)
+
+* Simulation control
+.tran 1n 100n
+.control
+  run
+  plot v(in) v(out)
+.endc
+.end
